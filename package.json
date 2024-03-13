@@ -1,0 +1,26 @@
+{
+  "name": "e-commerce",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahulSharma-12/E-commerce.git"
+  },
+  "author": "Rahul Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RahulSharma-12/E-commerce/issues"
+  },
+  "homepage": "https://github.com/RahulSharma-12/E-commerce#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.1"
+  }
+}
