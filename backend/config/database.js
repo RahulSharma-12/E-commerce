@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 
 const connectDatabase = ( )=>{
-
+// buhui
 // mongoose.connect(process.env.DB_URI,{useNewUrlParser:true, useUnifiedTopology:true, useCreateIndex: true}).then(
 //     (data)=>{
 //         console.log(`Mongodb connected with server : ${data.connection.host}`);
@@ -18,21 +18,24 @@ const connectDatabase = ( )=>{
 //          useUnifiedTopology:true,
 //         //   useCreateIndex:true
 //         })
-//     .then(
+//     .then(  
 //     (data)=>{
 //         console.log("Mongodb connected with server"); 
 //         // console.log(`Mongodb connected with server: ${data.connection.host}`); 
 //     }).catch((err)=>{
 //     console.log(err);
 // })
-
+  // databse
 mongoose.connect(process.env.DB_URI,{
     useNewUrlParser: true, 
     useUnifiedTopology: true,
     // useCreateIndex:true
 })
-.then(db => console.log(`MongoDb connected with server :`))
+.then((db) => console.log(`MongoDb connected with server :${db.connection.host}`))
 .catch(err => console.log(err));
 }
  
 module.exports = connectDatabase;
+
+
+ 
