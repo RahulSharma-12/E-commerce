@@ -92,7 +92,7 @@
 //                 default :0,
 //             },
 
-//             orderStaus:{
+//             orderStatus:{
 //                 type: String,
 //                 required: true,
 //                 default:"Processing",

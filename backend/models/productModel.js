@@ -39,11 +39,11 @@ const productSchema =  new mongoose.Schema({
         type: String,
         required: [true, "please enter Product Category"],
     },
-    stock:{
+    Stock:{ 
         type: Number,
         required:[true,"please Enter product STock"],
         maxLength:[4,"Stock cannot exceed 4 character"],
-        default:1
+        default : 1,
     },
     numOfReviews:{
         type:Number,
@@ -79,10 +79,10 @@ const productSchema =  new mongoose.Schema({
        },
 
       createdAt:{
-        type:Date,
-        default:Date.now
+        type: Date,
+        default: Date.now,
       },
 
 });
 
-module.exports = mongoose.model("Product", productSchema)
+module.exports = mongoose.model("Product", productSchema);
